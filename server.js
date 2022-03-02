@@ -6,7 +6,7 @@ const path = require("path");
 
 //app config
 const app = express();
-const port = process.env.PORT || 5000;
+const port = process.env.PORT || 6800;
 
 //  MiddleWares
 app.use(express.json());
@@ -23,15 +23,17 @@ app.use("/articles", require("./routes/article"));
 app.use("/users", require("./routes/article"));
 
 // ------------------Deployment---------------
+const __dirname1 = path.resolve();
+
 if (process.env.NODE_ENV === "production") {
-  app.use(express.static("client/build"));
+  app.use(express.static(__dirname1, "/client/build"));
   app.get("*", (req, res) => {
-    res.sendFile(path.resolve(__dirname, "client", "build", "index.html"));
+    res.sendFile(path.resolve(__dirname1, "client", "build", "index.html"));
   });
 }
 // -------------------------------------------
 
-app.listen(process.env.PORT, (err) => {
+app.listen(port, (err) => {
   if (err) console.log("server not connected");
   else console.log("server is connected on port: " + port);
 });
