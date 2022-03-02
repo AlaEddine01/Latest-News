@@ -31,7 +31,7 @@ if (process.env.NODE_ENV === "production") {
 }
 // -------------------------------------------
 
-app.listen(port, (err) => {
+app.listen(process.env.PORT, (err) => {
   if (err) console.log("server not connected");
   else console.log("server is connected on port: " + port);
 });
