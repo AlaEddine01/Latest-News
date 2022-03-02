@@ -1,0 +1,14 @@
+.CommentCard {
+  width: 45rem;
+  height: fit-content;
+}
+
+.btn-comment {
+  width: auto;
+  margin-left: 10px;
+}
+
+.comment-field {
+  height: 38px;
+  border-radius: 5px;
+}

@@ -1,0 +1,48 @@
+.article {
+  padding: 1.5rem;
+  transition: all 0.3s ease-in;
+}
+
+.article:hover {
+  opacity: 0.5;
+  transform: scale(0.98);
+}
+
+.card-footer {
+  display: flex;
+  justify-content: space-around;
+  border: 1px dashed;
+}
+
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 125px;
+  min-height: 100vh;
+}
+
+.card-img-top {
+  height: 201px;
+}
+
+.likeReaction {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  left: 0;
+  position: absolute;
+  bottom: 2%;
+  align-items: center;
+}
+
+.p-title {
+  font-weight: bold;
+  color: blue;
+}
+
+.p-content {
+  color: #17141d;
+  height: 215px;
+  overflow: auto;
+}

@@ -1,0 +1,23 @@
+.About-us {
+    display: flex;
+    font-family: "Dancing Script", cursive;
+    min-height: 100vh;
+  }
+  
+  .paragraph {
+    width: 50%;
+    margin-top: 15%;
+    margin-left: 16%;
+    font-size: 20px;
+  }
+  
+  .cercle {
+    width: 50%;
+    margin-left: 2%;
+    margin-top: 10%;
+  }
+  
+  .abus {
+    font-family: "Dancing Script", cursive;
+  }
+  
