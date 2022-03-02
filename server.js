@@ -6,6 +6,7 @@ const path = require("path");
 
 //app config
 const app = express();
+const port = process.env.PORT || 5000;
 
 //  MiddleWares
 app.use(express.json());
@@ -29,8 +30,8 @@ if (process.env.NODE_ENV === "production") {
   });
 }
 // -------------------------------------------
-const PORT = process.env.PORT || 6800;
-app.listen(PORT, (err) => {
+
+app.listen(port, (err) => {
   if (err) console.log("server not connected");
-  else console.log("server is connected on port: " + PORT);
+  else console.log("server is connected on port: " + port);
 });
